@@ -32,7 +32,7 @@ const randomMessages = [
   "i bet u got an F",
   "i cant solve it",
   "let result = ?"
-];
+]; //random lekseis pou tha vgazei 
 
 document.querySelectorAll(".btn").forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -47,7 +47,7 @@ document.querySelectorAll(".btn").forEach((btn) => {
     } else if (btn.classList.contains("eq")) {
       const random = randomMessages[Math.floor(Math.random() * randomMessages.length)];
       display.textContent = random;
-      current = ""; // reset input so it doesn't keep appending
+      current = ""; 
     }
   });
 });
